@@ -219,13 +219,13 @@ class PatchSysVolume:
     def start_patch(self):
         print("- Starting Patch Process")
         if self.verify_patch_allowed() is True:
-            print("- Found Root Volume can be mounted, continuing")
+            print("- Found Root Volume can be mounted, continuing to /System/Volumes/Update/mnt1")
             self.find_mount_root_vol(True)
 
     def start_unpatch(self):
         print("- Starting Unpatch Process")
         if self.verify_patch_allowed() is True:
-            print("- Found Root Volume can be mounted, continuing")
+            print("- Found Root Volume can be mounted, continuing to /System/Volumes/Update/mnt1")
             self.find_mount_root_vol(False)
             input("\nPress [ENTER] to return to the main menu")
 
